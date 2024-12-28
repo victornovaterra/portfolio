@@ -1,0 +1,389 @@
+/*Navigation and General Purpose CSS*/
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* Inherit box-sizing from html */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    position: fixed; /* Fixes the header to the top of the page */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the header is above other content */
+}
+
+header, footer {
+    background: #3ba894;
+    color: #000000;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+nav {
+    background: #3ba894;
+    margin: 0rem auto; /* Centers the nav bar horizontally */
+    padding: 0.25rem 1rem; /* Adds some padding inside the nav bar */
+    width: fit-content; /* Shrinks the nav bar to fit its content */
+    max-width: 100%; /* Ensures the nav bar doesn't get too wide */
+    text-align: center; /* Centers the text inside the nav bar */
+    font-size: 1.5rem; /* Increases the font size of the text */
+    font-weight: bold; /* Makes the text bold */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main {
+    flex: 1;
+    padding: 5rem 2rem 1rem; /* Add top padding to account for fixed header */
+    background: #cffff6;
+    color: #000000;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: #3ba894;
+    color: #000000;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*Home CSS*/
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text and button horizontally */
+}
+
+.home_heading {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.home_intro {
+    margin-top: 10px; /* Reduce top margin to move content upwards */
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.grad-image{
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Add some space between text and image */
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px; /* Adjust top margin as needed */
+    padding: 15px 30px; /* Increase padding to make the button larger */
+    font-size: 1.2rem; /* Increase font size */
+    color: #000000;
+    background-color: #3ba894;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3ba894;
+}
+
+
+
+
+
+
+/* Divider CSS */
+.divider {
+    border: none;
+    border-top: 1px solid #000; /* Thin black line */
+    margin: 2rem 0; /* Add some space around the divider */
+    width: 100%;
+}
+
+
+
+
+
+
+/*Education CSS*/
+#education {
+    padding: 2rem; /* Add padding to the new section */
+    text-align: center; /* Center the text in the new section */
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text horizontally */
+}
+
+.education-heading {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.education-list {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds padding to the left to show bullet points */
+    margin: 0;
+    text-align: left; /* Aligns the list text to the left */
+}
+
+.education-item {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add some space between list items */
+}
+
+.TU-image{
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some space between text and image */
+}
+
+
+
+
+
+
+/* Divider CSS */
+.divider2 {
+    border: none;
+    border-top: 1px solid #000; /* Thin black line */
+    margin: 2rem 0; /* Add some space around the divider */
+    width: 100%;
+}
+
+
+
+
+
+
+/*Experience CSS*/
+#experience {
+    padding: 2rem; /* Add padding to the new section */
+    text-align: center; /* Center the text in the new section */
+}
+
+.experience-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text horizontally */
+}
+
+.experience-heading {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.experience-list {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds padding to the left to show bullet points */
+    margin: 0;
+    text-align: left; /* Aligns the list text to the left */
+}
+
+.experience-item {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add some space between list items */
+    font-weight: bold;
+}
+
+.Cell-image{
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Add some space between text and image */
+}
+
+
+
+
+
+
+/* Divider CSS */
+.divider3 {
+    border: none;
+    border-top: 1px solid #000; /* Thin black line */
+    margin: 2rem 0; /* Add some space around the divider */
+    width: 100%;
+}
+
+
+
+
+
+
+/*Experience CSS*/
+#affil {
+    padding: 2rem; /* Add padding to the new section */
+    text-align: center; /* Center the text in the new section */
+}
+
+.affil-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.affil-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text horizontally */
+}
+
+.affil-heading {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.affil-list {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds padding to the left to show bullet points */
+    margin: 0;
+    text-align: left; /* Aligns the list text to the left */
+}
+
+.affil-item {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add some space between list items */
+    font-weight: bold;
+}
+
+.sps-image{
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some space between text and image */
+}
+
+
+
+
+
+
+/* Divider CSS */
+.divider4 {
+    border: none;
+    border-top: 1px solid #000; /* Thin black line */
+    margin: 2rem 0; /* Add some space around the divider */
+    width: 100%;
+}
+
+
+
+
+
+
+/*Experience CSS*/
+#skills {
+    padding: 2rem; /* Add padding to the new section */
+    text-align: center; /* Center the text in the new section */
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text horizontally */
+}
+
+.skills-heading {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skills-list {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds padding to the left to show bullet points */
+    margin: 0;
+    text-align: left; /* Aligns the list text to the left */
+}
+
+.skills-item {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add some space between list items */
+    font-weight: bold;
+}
+
+.python-image{
+    width: 280px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Add some space between text and image */
+}
